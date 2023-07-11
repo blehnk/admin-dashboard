@@ -1,19 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     display: grid;
     grid-template: 1fr 5fr / 1fr 4fr;
     grid-template-areas: 
     'sidebar header' 
     'sidebar main';
+    height: 100vh;
 }         
 
 .header {
-    grid-column: header;
+    grid-area: header;
+
+    display: grid;
+    grid-template: 1fr 2fr / 2fr 1fr;
+    grid-template-areas: 
+    'topL topR'
+    'botL botR';
+    align-items: center;
+    gap: 20px;
+
+    border: 1px solid black;
+
+}
+
+.header input[type='search'] {
+    grid-area: topL;
+}
+
+.header .name {
+    grid-area: topR;
+}
+
+.header .greetings {
+    grid-area: botL;
+
+    display: grid;
+
+}
+
+.header .head-menu {
+    grid-area: botR;
+}
+
+.header .head-menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
 
 .sidebar {
-    grid-column: sidebar;
+    grid-area: sidebar;
+
+    display: grid;
+    grid-template-rows: auto 1fr 2fr;
+    gap: 20px;
+
+    border: 1px solid black;
+
+}
+
+.side-menu1 ul{
+    height: 100%;
+    display: grid;
+    align-content: space-around;
+
+    border: 1px solid black;
+}
+
+.side-menu2 ul {
+    height: 30%;
+    display: grid;
+    align-content: space-around;
+
+    border: 1px solid black;
 }
 
 .main {
-    grid-column: main;
+    grid-area: main;
+
+    display: grid;
+    grid-template: 1fr 1fr/ 3fr 1fr;
+    grid-template-areas: 
+    'projects announcement'
+    'projects trending';
+
+    max-height: 100%;
+
+    border: 1px solid black;
+}
+
+.main .projects {
+    grid-area: projects;
+
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto 1fr;
+
+    border: 1px solid black;
+}
+
+.project-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+}
+
+.projects .main-head {
+    grid-column: 1 / -1;
+}
+
+.main .announcements {
+    grid-area: announcement;
+
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto 1fr;
+
+    border: 1px solid black;
+}
+
+.ann-items {
+    display: grid;
+    gap: 5px;
+}
+
+.main .trending {
+    grid-area: trending;
+
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto 1fr;
+
+    border: 1px solid black;
+}
+
+.trend-items{
+    display: grid;
+    grid-auto-rows: 1fr;
 }
