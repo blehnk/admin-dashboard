@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <input type="search">
-            <span class="name">Morgan Oakley</span>
+            <label for="search">
+                <input type="search" id="search" name="search">
+            </label>
+            <div class="profile">
+                <img class="bell" src="icons/bell-ring-outline.svg" alt="notification icon">
+                <img class="profile-picture" src="icons/profile2.svg" alt="profile picture">
+                <span class="name">Morgan Oakley</span>
+            </div>
             <div class="greetings">
-                <span>Hi there,</span>
-                <span class="user-name">Morgan Oakley (@morgan)</span>    
+                <img src="icons/profile2.svg" alt="profile picture">
+                <div class="text">
+                    <span>Hi there,</span>
+                    <span class="user-name">Morgan Oakley (@morgan)</span>
+                </div>
             </div>
             <div class="head-menu">
                 <ul>
@@ -29,19 +41,19 @@
 
             <div class="side-menu1">
                 <ul>
-                    <li class="side-menu-item">Home</li>
-                    <li class="side-menu-item">Profile</li>
-                    <li class="side-menu-item">Messages</li>
-                    <li class="side-menu-item">History</li>
-                    <li class="side-menu-item">Tasks</li>
-                    <li class="side-menu-item">Communities</li>
+                    <li class="side-menu-item1">Home</li>
+                    <li class="side-menu-item2">Profile</li>
+                    <li class="side-menu-item3">Messages</li>
+                    <li class="side-menu-item4">History</li>
+                    <li class="side-menu-item5">Tasks</li>
+                    <li class="side-menu-item6">Communities</li>
                 </ul>
             </div>
             <div class="side-menu2">
                 <ul>
-                    <li class="side-menu-item">Settings</li>
-                    <li class="side-menu-item">Support</li>
-                    <li class="side-menu-item">Privacy</li>
+                    <li class="side-menu-item1">Settings</li>
+                    <li class="side-menu-item2">Support</li>
+                    <li class="side-menu-item3">Privacy</li>
                 </ul>
             </div> 
         </div>
@@ -54,38 +66,76 @@
                     <article class="project-item">
                         <h3 class="main-sub-head">Super Cool Project</h3>
                         <p class="main-para">Lorem ipsum dolor sit amet.
-                        Quasi sapiente perspiciatis eum voluptatem.
-                        Suscipit iure ipsam tempora amet.</p>
+                        Exercitationem possimus sit aperiam quasi!
+                        Tempore esse magni ad expedita.
+                        Temporibus animi qui sapiente inventore.
+                        Dicta voluptatum eveniet quod autem.</p>
+                        <div class="icons">
+                            <img src="icons/star-plus-outline.svg" alt="">
+                            <img src="icons/eye-plus-outline.svg" alt="">
+                            <img src="icons/share-variant-outline.svg" alt="">
+                        </div>
                     </article>
                     <article class="project-item">
                         <h3 class="main-sub-head">Less Cool Project</h3>
                         <p class="main-para">Lorem ipsum dolor sit amet.
-                        Repellendus porro at consequuntur consectetur?
-                        Eius ut similique iusto voluptatem.</p>
+                        Architecto harum incidunt quibusdam autem!
+                        Quod veritatis dolores ducimus consectetur!
+                        Necessitatibus suscipit voluptas corrupti atque.</p>
+                        <div class="icons">
+                            <img src="icons/star-plus-outline.svg" alt="">
+                            <img src="icons/eye-plus-outline.svg" alt="">
+                            <img src="icons/share-variant-outline.svg" alt="">
+                        </div>
                     </article>
                     <article class="project-item">
                         <h3 class="main-sub-head">Impossible App</h3>
                         <p class="main-para">Lorem ipsum dolor sit amet.
-                        Voluptatibus sequi eaque perspiciatis similique.
-                        Delectus voluptatum praesentium veniam? Quod?</p>
+                        Cumque distinctio a sit deserunt!
+                        Error repudiandae quo doloribus consequuntur.
+                        Deleniti ex dolorum nobis quibusdam!
+                        Fugiat assumenda fuga laboriosam? Facere.</p>
+                        <div class="icons">
+                            <img src="icons/star-plus-outline.svg" alt="">
+                            <img src="icons/eye-plus-outline.svg" alt="">
+                            <img src="icons/share-variant-outline.svg" alt="">
+                        </div>
                     </article>
                     <article class="project-item">
                         <h3 class="main-sub-head">Easy Peasy App</h3>
                         <p class="main-para">Lorem ipsum dolor sit amet.
-                        Beatae recusandae ducimus quibusdam doloribus.
-                        Harum dicta at assumenda alias.</p>
+                        Odit ex id soluta pariatur!
+                        Nihil vitae deserunt explicabo sit!
+                        Corrupti commodi ea maiores voluptatem.</p>
+                        <div class="icons">
+                            <img src="icons/star-plus-outline.svg" alt="">
+                            <img src="icons/eye-plus-outline.svg" alt="">
+                            <img src="icons/share-variant-outline.svg" alt="">
+                        </div>
                     </article>
                     <article class="project-item">
                         <h3 class="main-sub-head">Ad Blocker</h3>
                         <p class="main-para">Lorem ipsum dolor sit amet.
-                        Mollitia corrupti quidem numquam ut!
-                        Amet deserunt laborum quia delectus.</p>
+                        Alias enim inventore dignissimos doloremque.
+                        Optio, corrupti. Assumenda, atque nostrum.
+                        Facere qui molestias dolorem eveniet.</p>
+                        <div class="icons">
+                            <img src="icons/star-plus-outline.svg" alt="">
+                            <img src="icons/eye-plus-outline.svg" alt="">
+                            <img src="icons/share-variant-outline.svg" alt="">
+                        </div>
                     </article>
                     <article class="project-item">
                         <h3 class="main-sub-head">Money Maker</h3>
                         <p class="main-para">Lorem ipsum dolor sit amet.
-                        Ipsum iste nemo aliquam a!
-                        Minima laboriosam modi quae mollitia?</p>
+                        Sequi temporibus reiciendis molestias iste.
+                        Fugiat exercitationem soluta ex minus?
+                        Sapiente voluptatibus vero debitis consequatur.</p>
+                        <div class="icons">
+                            <img src="icons/star-plus-outline.svg" alt="">
+                            <img src="icons/eye-plus-outline.svg" alt="">
+                            <img src="icons/share-variant-outline.svg" alt="">
+                        </div>
                     </article>
                 </div>
             </div>
@@ -118,20 +168,32 @@
                 <h2 class="main-head">Trending</h2>
                 <div class="trend-items">
                     <div class="trend-item">
-                        <h4>@tegan</h4>
-                        <span>World Peace Builder</span>
+                        <img src="icons/profile1.svg" alt="profile icon">
+                        <div class="text">
+                            <h4>@tegan</h4>
+                            <span>World Peace Builder</span>
+                        </div>
                     </div>
                     <div class="trend-item">
-                        <h4>@morgan</h4>
-                        <span>Super Cool Project</span>
+                        <img src="icons/profile2.svg" alt="profile icon">
+                        <div class="text">
+                            <h4>@morgan</h4>
+                            <span>Super Cool Project</span>
+                        </div>
                     </div>
                     <div class="trend-item">
-                        <h4>@kendall</h4>
-                        <span>Life Changing App</span>
+                        <img src="icons/profile3.svg" alt="profile icon">
+                        <div class="text">
+                            <h4>@kendall</h4>
+                            <span>Life Changing App</span>
+                        </div>
                     </div>
                     <div class="trend-item">
-                        <h4>@alex</h4>
-                        <span>No Traffic Maker</span>
+                        <img src="icons/profile4.svg" alt="profile icon">
+                        <div class="text">
+                            <h4>@alex</h4>
+                            <span>No Traffic Maker</span>
+                        </div>
                     </div>
                 </div>
             </div>
